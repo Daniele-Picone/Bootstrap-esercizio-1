@@ -12,32 +12,42 @@
 </head>
 <body >
     <!-- Navbar content -->
-    <nav class="container-fluid  position-fixed m-b-5  top-0 navbar d-flex ailgn-items-center bg-primary p-0 " data-bs-theme="dark">
-       
-        <div  class="container-fluid d-flex justify-content-center ailgn-items-center">
-            <div  class=" row d-flex justify-content-between ailgn-items-center w-100 ">               
-                <div class="col-1 col-sm-2 col-lg-2 d-flex justify-content-start">
-                    <img id="logo" src="./media/logo sito.jpg" alt="">
-                </div>
-              <div class="col-4 col-sm-8 col-lg-6 col-xl-6 d-flex justify-content-center align-items-center p-1 ">
-                    <ul class="d-flex ailgn-items-center ">
-                        <li><a href=""></a>home</li>
-                        <li><a href=""></a>Ricette regionali</li>
-                        <li><a href=""></a>I nostri chef </li>
-                    </ul>
-                 </div>
-                 <div  id="riga-testo" class="col-3 col-sm-2 col-lg-4">
-                    <input  class="form-control form-control-lg bg-secondary text-white " type="text" placeholder =" Cerca la tua ricetta preferita" aria-label=".form-control-lg example ">
-                </div>
-                <div  class="col-1 d-flex ailgn-items-center col-sm-1">
-               
-                    
-            </div>
-
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"> <img src="media/logo sito.jpg" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ricettario</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Opzioni
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Accont</a></li>
+                  <li><a class="dropdown-item" href="#">Assistenza</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">I nostri corsi</a></li>
+                </ul>
+              </li>
+             
+            </ul>
+            <form class="d-flex" role="search">
+              <input id="ricerca" class="form-control me-2 " type="search" placeholder="Cerca la tua ricetta" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">cerca</button>
+            </form>
+          </div>
         </div>
-        
-    </nav> 
-
+      </nav>
+      <!-- fine nav -->
+<!-- header -->
     <header class="container-fluid  ">
         <div class="card text-bg-dark m-t-5">
             <img src="media/foto-back.jpg" class="card-img 100vh  " alt="...">
@@ -47,45 +57,101 @@
             </div>
           </div>
     </header>
-    
+    <!-- fineheader -->
+    <!-- main -->
     <main class="container  ">
-        <h2>Ricette Campane</h2>
-        <section class="row justify-content-between ">
-            <article class="col-3 col-sm-5 col-lg-3 ricetta ">
-                <a href="https://ricette.giallozafferano.it/Genovese.html"><img src="./media/genovese.jpg" alt="piatto genovese alla napoleta"></a>
-                <h3>Genovese alla Napoletana</h3>
-                <p>
-                    C’è una ricetta della tradizione campana che è molto diffusa e apprezzata da tutti: porta il nome di genovese pur essendo, inverosimilmente, sconosciuta al capoluogo ligure. Si tratta di un sostanzioso ragù in bianco preparato con tantissime cipolle che durante la lunga cottura si trasformano in una deliziosa purea, molto saporita e con una spiccata nota dolce. Per questo motivo il sugo deve essere prima bilanciato attraverso l’acidità del vino e infine lasciato “tirare”, cioè asciugare. Qualcuno conserva la carne per gustarla come secondo piatto, 
-                </p>
-                <button><a href="https://ricette.giallozafferano.it/Genovese.html">continua la lettura 
-
-                </a> </button>
-            </article>
-            <article class="col-3 col-sm-5 col-lg-3 ricetta">
-                <a href="https://ricette.giallozafferano.it/Spaghetti-alla-Nerano.html"><img src="./media/nerano.jpg" alt="piatto spaghetti alla nerano"></a>
-                <h3> Spaghetti alla nerano</h3>
-                <p>
-                    Con la ricetta degli spaghetti alla Nerano portiamo in tavola una pietanza dai sapori campani, un primo piatto della tradizione culinaria partenopea che conquista da sempre con la sua genuina semplicità. L’origine di questa preparazione tipica è avvolta da diverse leggende, quella più diffusa e accreditata fa risalire l’idea di questa ricetta agli anni Cinquanta: pare infatti che una ristoratrice della piccola baia di Nerano per legare la pasta e zucchine provò ad aggiungere il Provolone del Monaco, un formaggio a pasta filata più o meno piccante...
-                </p>
-                <button><a href="https://ricette.giallozafferano.it/Spaghetti-alla-Nerano.html">continua la lettura
-
-                </a></button>
-            </article>
-            <article class="col-3 col-sm-5 col-lg-3 ricetta">
-                <a href="https://ricette.giallozafferano.it/Pastiera-napoletana.html"><img src="./media/pastiera.jpg" alt=" pastiera napoletana"></a>
-                <h3>Pastiera-napoletana</h3>
-                <p>
-                    Durante il periodo pasquale, in particolare il giovedì Santo, nelle cucine partenopee si assiste alla tradizionale preparazione della pastiera napoletana. Un vero e proprio rito, fatto di gesti e segreti che si tramandano di generazione in generazione. Ogni famiglia custodisce il proprio modo per preparare la frolla perfetta, per aromatizzare il ripieno al grano e ricotta (tutta pecora o metà vaccina), per lo spessore e il numero delle losanghe (o gelosie). 
-                    Sentirete che profumi e che gusto, un'esplosione di sapori... pura poesia.
-                </p>
-                <button><a href="https://ricette.giallozafferano.it/Pastiera-napoletana.html">continua la lettura
-
-                </a>
+        <h2> Ricette Campane </h1>
+        <section class="article">
+            
+            <div class="card" style="width: 18rem;">
+                <img src="media/genovese.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Genovese</h5>
+                  <p class="card-text">C’è una ricetta della tradizione campana che è molto diffusa e apprezzata da tutti: porta il nome di genovese pur essendo, inverosimilmente, sconosciuta al capoluogo ligure. Si tratta di un sostanzioso ragù in bianco preparato con tantissime cipolle che durante la lunga cottura si trasformano in una deliziosa purea, molto saporita e con una spiccata nota dolce. Per questo motivo il sugo deve essere prima bilanciato attraverso l’acidità del vino  </p>
+                  <a href="https://ricette.giallozafferano.it/Genovese.html" class="btn btn-primary">Continua a leggere</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="media/nerano.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"> Spaghetti alla Nerano</h5>
+                  <p class="card-text">Con la ricetta degli spaghetti alla Nerano portiamo in tavola una pietanza dai sapori campani, un primo piatto della tradizione culinaria partenopea che conquista da sempre con la sua genuina semplicità. L’origine di questa preparazione tipica è avvolta da diverse leggende, quella più diffusa e accreditata fa risalire l’idea di questa ricetta agli anni Cinquanta: pare infatti che una ristoratrice della piccola baia di Nerano per legare la pasta e zucchine </p>
+                  <a href="https://ricette.giallozafferano.it/Spaghetti-alla-Nerano.html" class="btn btn-primary">Continua a leggere</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="media/pastiera.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Pastiera Napoletana</h5>
+                  <p class="card-text">Durante il periodo pasquale, in particolare il giovedì Santo, nelle cucine partenopee si assiste alla tradizionale preparazione della pastiera napoletana. Un vero e proprio rito, fatto di gesti e segreti che si tramandano di generazione in generazione. Ogni famiglia custodisce il proprio modo per preparare la frolla perfetta, per aromatizzare il ripieno al grano e ricotta (tutta pecora o metà vaccina), per lo spessore e il numero delle losanghe (o gelosie).</p>
+                  <a href="https://ricette.giallozafferano.it/Pastiera-napoletana.html" class="btn btn-primary">Continua a leggere</a>
+                </div>
+              </div>
+        </section>
+        <section >
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="media/Melanzane-a-funghetto_360x300.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="media/Calamarata_360x300.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="media/Delizie-al-limone_360x300.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
                 </button>
-            </article>
-         </section>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+
+
+        <footer>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Come si fa la calamarata.
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body"> Riconoscete questo particolare formato di pasta? Si tratta della calamarata, molto utilizzato nella cucina campana! Sì presta benissimo per condimenti veloci e saporiti come il ragù di pesce spada. Vi state domandando se hanno qualcosa in comune con i paccheri? Non siete del tutto fuori strada: <a href="https://ricette.giallozafferano.it/Calamarata.html">la calamarata</a>, nel napoletano, è conosciuta con il nome di mezzi paccheri. </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Come si fanno le melanzane a funghetto.
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body"> <a href="https://ricette.giallozafferano.it/Melanzane-a-funghetto.html">Le melanzane</a> ci piacciono in tutti i modi, al forno, gratinate e come ve le presentiamo oggi: le melanzane a funghetto! In Campania sono conosciute anche come fungitiello alla napoletana, un contorno prevalentemente estivo. Il nome deriva proprio dal modo di tagliare la melanzana a piccoli pezzi che ricordano i funghi.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Come si fanno le delizie a limone.
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">L'inconfondibile profumo dei limoni di Amalfi e il gusto delicato della crema al limoncello sono i protagonisti di una ricetta che inebrierà le vostre papille gustative, oggi prepariamo le <a href="https://ricette.giallozafferano.it/Delizie-al-limone.html">delizie al limone</a>. </div>
+                  </div>
+                </div>
+              </div>
+        </footer>
         
     </main>
+    <!-- fine main -->
+
+    
     
     
     

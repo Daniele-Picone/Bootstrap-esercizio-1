@@ -1,33 +1,8 @@
 /* nav-bar */
-nav{
-    border: 1px solid rgb(8, 14, 98);
-    border-radius: 20px;
-    box-shadow: 2px 2px rgba(0, 0, 0, 0.112);
-    margin-top: 2px;
-    z-index: 2;
+body{
+    background-color: #e5dcbb;
 }
-#logo{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-}
- 
-nav a{
-    text-decoration: none;
-   }
-nav li{
-    list-style-type: none;
-    margin-top:6px;
-    margin-right: 20px;
-    color:  white;
-    font-size: 20px;
-    text-transform: uppercase;
-    }
-    nav li:hover, nav li:active{
-        color: rgba(83, 242, 128, 0.882);
-        cursor: pointer;
-        
-    }
+
 
 .form-control {
     height: 10px;
@@ -36,17 +11,21 @@ nav li{
 #riga-testo{
     margin-top: 4px;
 }
-/* nav button{
-    height: 40px ;
+nav{
+    margin-left: 2px;
+    margin-right: 2px;
+    border-radius: 15px;
+}
+.navbar-brand img{
+    height: 40px;
     width: auto;
-    margin-top: 8px;
-    display: flex;
-    align-items: center;
-    margin-left: -100px;
-    
-} */
+}
+#ricerca{
+    height: 35px;
+}
+
 header{
-    margin-top: 80px;
+    margin-top: 20px;
 }
 header h1{
     margin-top: 100px;
@@ -62,156 +41,52 @@ main h2{
     text-align: center;
     font-size: 50px;
     margin-bottom: 60px;
-    background-color: rgba(0, 255, 255, 0.24);
+    background-color:  #e5dcbb;
+    border: 2px solid rgba(0, 0, 0, 0.208);
  
     border-radius: 30px;
 }
-section article img{
-    
-    height: auto;
-    max-width: 100%;
-    margin-top: 10px;
-    border-bottom: 2px solid rgb(8, 14, 98);
-}
-
-article{
-    height: auto;
+.article{
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
-    border: 2px solid  rgb(8, 14, 98) ;
-    background-color: rgba(0, 255, 255, 0.247);
-    box-shadow: 2px 2px 2px 2px rgba(16, 1, 1, 0.186);
-    border-radius: 20px;
-    padding: 10px;
+
+}
+.card{
+    background-color: #e5dcbb;
+    border: 1px solid;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px;
     
+
+
 }
-article h3{
-    font-size: 25px;
-    text-align: left;
-    margin-top: 10px;
+
+.card:hover{
+    box-shadow: none;
 }
-article p{
-    margin-top: 20px;
-    font-size: 20px;
-    color: rgb(13, 0, 0);
-}
- article button{
-    width: auto;
-    height: 30px;
-    background-color: rgba(8, 14, 98, 0.367);
-    border: 2px solid  rgb(8, 14, 98);
-    color: white;
-    border-radius: 20px;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-right: -150px;
+
+
+.carousel{
+   
+    margin-top: 40px;
     
- }
- button a{
+  
+}
+
+
+.accordion{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.accordion a{
     text-decoration: none;
-    color: white;
-    
- }
-
-
-
-
-/* media query */
-@media screen and ( max-width: 576px ) {
-    nav{
-        width: 100%;
-        height: 80px;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    #logo{
-        width: 30px;
-        height: 30px;
-        position: relative;
-        top: 20px;
-        left: -10px;
-        margin-right: 5px;
-    }
-    nav ul{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        padding: 0px;
-        
-    }
-    nav li{
-        font-size: 14px;
-        text-transform: uppercase;
-         margin-left: 30px;
-    }
-    #riga-testo{
-        display: none;
-    }
-    #nav-button{
-        display: none;
-    }
-    /* header */
-    header{
-        margin-top: 100px;
-    }
-    header img{
-        width: 100vh;
-       
-    }
-    header h1{
-        font-size: 30px;
-    }
-
-    /* main */
-
-    main h2{
-        font-size: 20px;
-    }
-     section{
-      margin-top: 10px;
-        flex-direction: column;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-       
-    }
-    section article img{
-        height: auto;
-        width: auto;
-    }
- 
-    .ricetta{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 80%;
-        margin-bottom: 20px;
-        
-    }
-    article button{
-        margin-right: 1px;
-    }
+    color: black;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s all;
 }
-@media screen and ( min-width: 576px) and (max-width: 1000px) {
- nav li{
-    font-size: 20px;
- }
+.accordion a:hover{
+ color: rgba(0, 0, 0, 0.367);
 
-    header h1{
-   font-size: 40px;
- }
- 
-    .ricetta{
-        width: 40%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 20px;
-    }
-    article button{
-        margin-right:10px;
-    }
 }
